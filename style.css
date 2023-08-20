@@ -1,0 +1,239 @@
+:root{
+    --padding-right:10vw;
+    --nav-gap:30px;
+}
+body{
+    background-color: #F7F3E8;
+    margin:0;
+    padding: 0;
+}
+
+.nav-desktop, .nav-mobile{
+    
+    padding:50px var(--padding-right);
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:calc(var(--nav-gap)/2);
+}
+
+.Hosterrlogo{
+    width: 105;
+   
+}
+.hiring{
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right, #dfb061, #d65e72);
+    padding:5px;
+    border-radius: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:calc(var(--nav-gap));
+}
+.link{
+    text-decoration: none;
+    color: #6F7487;
+    font-size:15px;
+    font-family: 'Lato', sans-serif;
+
+    transition: background-size 300ms ease;
+    background-image: linear-gradient(grey,grey);
+    background-size: 0% 3px;
+    background-repeat:no-repeat;
+    background-position: left bottom;
+}
+.link:hover{
+    background-size: 100% 3px;
+}
+
+.nav-registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:calc(var(--nav-gap)/2);
+}
+.SighnIn{
+   background:rgba(255, 255, 255, 0.0);
+   border: 0;
+   color: #6F7487;
+    font-size:15px;
+    font-family: 'Lato', sans-serif;
+
+    transition: background-size 300ms ease;
+    background-image: linear-gradient(grey,grey);
+    background-size: 0% 3px;
+    background-repeat:no-repeat;
+    background-position: left bottom;
+}
+
+.SighnIn:hover{
+    background-size: 100% 3px;
+}
+.register{
+    background-color:#5475E1;
+    color: white;
+    border:0;
+    font-size:15px;
+   font-family: 'Lato', sans-serif;
+   padding:15px;
+   border-radius: 10px;
+}
+
+.register:hover{
+    background-color:rgb(51, 81, 179)
+}
+.hero{
+    padding: 50px var(--padding-right);
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+    padding:20px;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#email{
+    text-decoration: none;
+    background-color:#686868(255, 255, 255, 1);
+    border:0;
+    padding:15px;
+    
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin:0;
+}
+.text{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin:0;
+}
+.assurance{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.assured{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+.img{
+    height:400px;
+}
+
+.hero-image img:nth-child(1){
+    position: absolute;
+    z-index: -3;
+    animation:rotate45 1s;
+    animation-fill-mode: forwards ;
+}
+
+.hero-image img:nth-child(2){
+    position: absolute;
+    z-index: -2;
+    animation:rotate30 1s;
+    animation-fill-mode: forwards ;
+
+}
+
+.hero-image img:nth-child(3){
+    position: absolute;
+    z-index: -1;
+    animation:rotate15 1s;
+    animation-fill-mode: forwards ;
+    
+}
+@keyframes rotate15{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-15deg)
+    }
+}
+@keyframes rotate30{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-30deg)
+    }
+}
+@keyframes rotate45{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-45deg)
+    }
+}
+footer{
+    display:flex;
+    padding:20px var(--padding-right);
+    gap:20px;
+    font-family: 'Lato', sans-serif;
+    color: #686868;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.talkto{
+    color:black;
+    font-weight: 700;
+}
+.assistance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.havequestion{
+    margin:0;
+
+}
+.hidden{
+    display:none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero{
+        flex-direction: column-reverse;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .hero-image{
+        padding: 15px;
+    }
+    .hero-image > img{
+        height: 300px;
+    }
+}
