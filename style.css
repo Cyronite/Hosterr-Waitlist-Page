@@ -51,12 +51,12 @@ body{
 
     transition: background-size 300ms ease;
     background-image: linear-gradient(grey,grey);
-    background-size: 0% 3px;
+    background-size: 0% 2px;
     background-repeat:no-repeat;
     background-position: left bottom;
 }
 .link:hover{
-    background-size: 100% 3px;
+    background-size: 100% 2px;
 }
 
 .nav-registration{
@@ -74,13 +74,13 @@ body{
 
     transition: background-size 300ms ease;
     background-image: linear-gradient(grey,grey);
-    background-size: 0% 3px;
+    background-size: 0% 2px;
     background-repeat:no-repeat;
     background-position: left bottom;
 }
 
 .SighnIn:hover{
-    background-size: 100% 3px;
+    background-size: 100% 2px;
 }
 .register{
     background-color:#5475E1;
@@ -101,6 +101,7 @@ body{
     gap:30px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .hero-text{
     display: flex;
@@ -118,6 +119,7 @@ form{
     text-decoration: none;
     background-color:#686868(255, 255, 255, 1);
     border:0;
+    border-radius:10px;
     padding:15px;
     
 }
@@ -144,7 +146,9 @@ form{
 .img{
     height:400px;
 }
-
+.hero-image{
+    transform:translateX(20px);
+}
 .hero-image img:nth-child(1){
     position: absolute;
     z-index: -3;
@@ -230,10 +234,19 @@ footer{
     footer{
         flex-direction: column;
     }
-    .hero-image{
-        padding: 15px;
-    }
     .hero-image > img{
         height: 300px;
+        padding: 15px;
+    }
+    form{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .logo{
+        flex-direction: column;
+        align-items: start;
+        gap:10px;
     }
 }

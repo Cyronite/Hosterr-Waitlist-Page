@@ -1,6 +1,6 @@
 const desktopnav = document.querySelector(".nav-desktop");
 const mobilenav = document.querySelector(".nav-mobile");
-
+navhanddler();
 function navhanddler(){
     if (window.innerWidth > 1000){
         mobilenav.classList.add("hidden");
