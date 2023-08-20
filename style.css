@@ -65,7 +65,7 @@ body{
     align-items: center;
     gap:calc(var(--nav-gap)/2);
 }
-.SighnIn{
+.signIn{
    background:rgba(255, 255, 255, 0.0);
    border: 0;
    color: #6F7487;
@@ -79,7 +79,7 @@ body{
     background-position: left bottom;
 }
 
-.SighnIn:hover{
+.signIn:hover{
     background-size: 100% 2px;
 }
 .register{
